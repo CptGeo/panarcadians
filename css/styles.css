@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./css/styles.css -o ./dist/styles.css */
+
+
+@layer components {
+
+    .img-fluid{@apply w-full h-auto;}
+
+    .menu-list{@apply list-none hidden ml-10 p-0 h-full w-full items-center;}
+
+    .row-items{@apply flex flex-wrap justify-between;}
+
+    .more-btn{@apply pl-34 relative uppercase text-tiny font-bold text-white no-underline mt-20 inline-block;}
+        
+    .blog-card{@apply text-white mb-40;}
+
+    .input-group{@apply w-full flex flex-col;}
+
+    .input-text{@apply w-full border-1 border-gray-200 text-xl font-body h-46 rounded-md;}
+
+    .textarea{@apply w-full border-1 border-gray-200 text-xl font-body h-120 p-10 resize-none rounded-md;}
+
+    .input-label{@apply text-sm tracking-xs mb-3.5 inline-block text-darkgray;}
+
+    .submit-btn{@apply max-w-130 outline-none border-none py-15 px-10 text-white rounded-md w-full h-50 ml-auto font-body text-tiny font-bold uppercase relative cursor-pointer;}
+
+    .back-to-top{@apply flex items-center justify-center w-44 h-44 bg-red rounded-full fixed bottom-60 right-10;}
+
+    .lang-flags{@apply shadow-lg-45 hidden absolute left-0 bottom-0 transform translate-y-full z-99 rounded-md m-0 flex-col p-10 bg-white;}
+    
+    /* - RESPONSIVE - */
+
+    @media(min-width: 640px){
+        .submit-btn{@apply max-w-240 py-15 px-55;}
+        .back-to-top{@apply top-0 right-40 bottom-unset absolute transform -translate-y-1/2;}
+    }
+
+    @media (min-width: 960px) {
+        .menu-list{@apply flex;}
+        .blog-card{@apply mb-0;}
+    }
+
+    @media(min-width: 1280px){
+        .menu-list{@apply ml-20;}  
+    }
+    @media(min-width: 1400px){
+        .menu-list{@apply ml-40;}  
+    }
+
+}
+
+@layer base {
+
+    *{@apply box-border}
+
+    h1, h2, h3, h4, h5, h6{@apply font-bold}
+
+    img, svg, video, canvas, audio, iframe, embed, object{@apply inline}
+
+    body{@apply p-0 m-0 overflow-x-hidden relative font-body}
+
+    p{@apply m-0}
+
+}

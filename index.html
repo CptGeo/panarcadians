@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panarcadians - Homepage</title>
+        <link rel="stylesheet" href="./dist/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+
+        <header class="min-h-480 sm:min-h-750 relative w-full pb-30">
+            <div class="container sm:px-20 sm:lg-0">
+                <div id="top-bar" class="pl-0 flex items-center justify-between absolute left-0 top-0 w-full lg:h-70 lg:pl-160 lg:static lg:w-auto">
+
+
+                    <!-- Left Side Widgets - Start -->
+                    <div class="lg:flex lg:w-auto lg:justify-start lg:p-0 lg:relative lg:top-unset hidden text-white flex-wrap w-full justify-between px-22 relative top-50">
+                        <div class="flex flex-col place-items-center mr-20">
+                            <h4 class="sm:text-sm sm:tracking-lg block text-xs font-bold uppercase ml-25 tracking-md">Αρκαδια</h4>
+                            <div class="data-info flex items-center leading-7">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.833336C4.91668 0.833336 0.833344 4.91667 0.833344 10C0.833344 15.0833 4.91668 19.1667 10 19.1667C15.0833 19.1667 19.1667 15.0833 19.1667 10C19.1667 4.91667 15.0833 0.833336 10 0.833336ZM10 17.5C5.83334 17.5 2.50001 14.1667 2.50001 10C2.50001 5.83334 5.83334 2.5 10 2.5C14.1667 2.5 17.5 5.83334 17.5 10C17.5 14.1667 14.1667 17.5 10 17.5ZM13.0833 13.0833C13.4167 12.75 13.4167 12.25 13.0833 11.9167L10.8333 9.66667V5C10.8333 4.5 10.5 4.16667 10 4.16667C9.50001 4.16667 9.16668 4.5 9.16668 5V10C9.16668 10.25 9.25001 10.4167 9.41668 10.5833L11.9167 13.0833C12.0833 13.25 12.25 13.3333 12.5 13.3333C12.75 13.3333 12.9167 13.25 13.0833 13.0833Z" fill="black"/>
+                                    <mask id="clock" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.833336C4.91668 0.833336 0.833344 4.91667 0.833344 10C0.833344 15.0833 4.91668 19.1667 10 19.1667C15.0833 19.1667 19.1667 15.0833 19.1667 10C19.1667 4.91667 15.0833 0.833336 10 0.833336ZM10 17.5C5.83334 17.5 2.50001 14.1667 2.50001 10C2.50001 5.83334 5.83334 2.5 10 2.5C14.1667 2.5 17.5 5.83334 17.5 10C17.5 14.1667 14.1667 17.5 10 17.5ZM13.0833 13.0833C13.4167 12.75 13.4167 12.25 13.0833 11.9167L10.8333 9.66667V5C10.8333 4.5 10.5 4.16667 10 4.16667C9.50001 4.16667 9.16668 4.5 9.16668 5V10C9.16668 10.25 9.25001 10.4167 9.41668 10.5833L11.9167 13.0833C12.0833 13.25 12.25 13.3333 12.5 13.3333C12.75 13.3333 12.9167 13.25 13.0833 13.0833Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#clock)">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </g>
+                                </svg>
+                                <p class="sm:text-3xl text-lg ml-5 font-normal font-sans">13:28</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col place-items-center mr-20">
+                            <h4 class="sm:text-sm sm:tracking-lg block text-xs font-bold uppercase ml-25 tracking-md">Καταιγιδα</h4>
+                            <div class="data-info flex items-center leading-7">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8485 14.8939H16.0145C18.6702 14.308 20.413 11.6294 19.9151 9.03448C19.4171 6.6907 17.3423 5.01658 15.0186 5.01658H14.5206C13.2757 1.41721 9.3751 -0.759157 5.64046 0.245319C3.73165 0.747556 2.07181 1.91944 1.0759 3.67728C-0.00299145 5.3514 -0.251967 7.44406 0.245985 9.3693C0.826929 11.3783 2.07181 13.0524 3.89763 14.0569C4.31259 14.308 4.81054 14.1406 5.05952 13.722C5.3085 13.3035 5.14251 12.8013 4.72755 12.6338C3.31669 11.7968 2.32078 10.5412 1.90582 8.95077C1.49086 7.36035 1.73984 5.85364 2.56976 4.43063C3.31669 3.09133 4.56157 2.17056 6.05542 1.75203C9.12613 0.914969 12.2798 2.84021 13.1097 5.93735C13.1927 6.35588 13.5247 6.607 13.9397 6.607H15.0186C16.5954 6.607 17.9233 7.69518 18.2552 9.2856C18.6702 11.0434 17.5083 12.885 15.6825 13.2198C15.1845 13.3035 14.9356 13.8057 15.0186 14.2243C15.1016 14.6428 15.4335 14.8939 15.8485 14.8939ZM9.12613 13.3035H12.5288C12.8608 13.3035 13.0268 13.5546 13.1927 13.8057C13.3587 14.0569 13.3587 14.3917 13.1927 14.6428L9.87306 19.6652C9.70708 19.8326 9.4581 20 9.20912 20C9.04314 20 8.87715 19.9163 8.71117 19.8326C8.29621 19.5815 8.21322 19.0792 8.46219 18.6607L10.952 14.9776H7.54928C7.21731 14.9776 6.96834 14.8102 6.88535 14.5591C6.71936 14.308 6.71936 13.9731 6.88535 13.722L10.205 8.69965C10.454 8.28112 10.952 8.19741 11.3669 8.44853C11.7819 8.69965 11.8649 9.20189 11.6159 9.62042L9.12613 13.3035Z" fill="black"/>
+                                    <mask id="cloud" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8485 14.8939H16.0145C18.6702 14.308 20.413 11.6294 19.9151 9.03448C19.4171 6.6907 17.3423 5.01658 15.0186 5.01658H14.5206C13.2757 1.41721 9.3751 -0.759157 5.64046 0.245319C3.73165 0.747556 2.07181 1.91944 1.0759 3.67728C-0.00299145 5.3514 -0.251967 7.44406 0.245985 9.3693C0.826929 11.3783 2.07181 13.0524 3.89763 14.0569C4.31259 14.308 4.81054 14.1406 5.05952 13.722C5.3085 13.3035 5.14251 12.8013 4.72755 12.6338C3.31669 11.7968 2.32078 10.5412 1.90582 8.95077C1.49086 7.36035 1.73984 5.85364 2.56976 4.43063C3.31669 3.09133 4.56157 2.17056 6.05542 1.75203C9.12613 0.914969 12.2798 2.84021 13.1097 5.93735C13.1927 6.35588 13.5247 6.607 13.9397 6.607H15.0186C16.5954 6.607 17.9233 7.69518 18.2552 9.2856C18.6702 11.0434 17.5083 12.885 15.6825 13.2198C15.1845 13.3035 14.9356 13.8057 15.0186 14.2243C15.1016 14.6428 15.4335 14.8939 15.8485 14.8939ZM9.12613 13.3035H12.5288C12.8608 13.3035 13.0268 13.5546 13.1927 13.8057C13.3587 14.0569 13.3587 14.3917 13.1927 14.6428L9.87306 19.6652C9.70708 19.8326 9.4581 20 9.20912 20C9.04314 20 8.87715 19.9163 8.71117 19.8326C8.29621 19.5815 8.21322 19.0792 8.46219 18.6607L10.952 14.9776H7.54928C7.21731 14.9776 6.96834 14.8102 6.88535 14.5591C6.71936 14.308 6.71936 13.9731 6.88535 13.722L10.205 8.69965C10.454 8.28112 10.952 8.19741 11.3669 8.44853C11.7819 8.69965 11.8649 9.20189 11.6159 9.62042L9.12613 13.3035Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#cloud)">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </g>
+                                </svg>
+                                <p class="sm:text-3xl text-lg ml-5 font-normal font-sans">12°C<span class="opacity-40 ml-3">°F</span></p>                      
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left Side Widgets - Stop -->
+
+
+                    <div class="text-white hidden mr-40 lg:flex">
+                        <div class="flex items-center mr-40">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 7C7 4.2 9.2 2 12 2C14.8 2 17 4.2 17 7C17 9.8 14.8 12 12 12C9.2 12 7 9.8 7 7ZM21 19V21C21 21.6 20.6 22 20 22C19.4 22 19 21.6 19 21V19C19 17.3 17.7 16 16 16H8C6.3 16 5 17.3 5 19V21C5 21.6 4.6 22 4 22C3.4 22 3 21.6 3 21V19C3 16.2 5.2 14 8 14H16C18.8 14 21 16.2 21 19ZM12 10C10.3 10 9 8.7 9 7C9 5.3 10.3 4 12 4C13.7 4 15 5.3 15 7C15 8.7 13.7 10 12 10Z" fill="black"/>
+                                <mask id="avatar" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="2" width="18" height="20">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 7C7 4.2 9.2 2 12 2C14.8 2 17 4.2 17 7C17 9.8 14.8 12 12 12C9.2 12 7 9.8 7 7ZM21 19V21C21 21.6 20.6 22 20 22C19.4 22 19 21.6 19 21V19C19 17.3 17.7 16 16 16H8C6.3 16 5 17.3 5 19V21C5 21.6 4.6 22 4 22C3.4 22 3 21.6 3 21V19C3 16.2 5.2 14 8 14H16C18.8 14 21 16.2 21 19ZM12 10C10.3 10 9 8.7 9 7C9 5.3 10.3 4 12 4C13.7 4 15 5.3 15 7C15 8.7 13.7 10 12 10Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#avatar)">
+                                <rect width="24" height="24" fill="white"/>
+                                </g>
+                            </svg>
+                            <a href="#" class="text-white text-tiny font-bold no-underline ml-5">Εγγραφή / Σύνδεση</a>
+                        </div>
+
+                        <!-- Language picker - Start -->
+
+                        <div class="lang-picker inline-flex items-center cursor-pointer relative">
+                            <div class="mr-4 inline-flex">
+                                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="28" height="18" fill="white"/>
+                                    <rect width="4" height="4" fill="#005E96"/>
+                                    <rect x="6" width="4" height="4" fill="#005E96"/>
+                                    <rect x="6" y="6" width="4" height="4" fill="#005E96"/>
+                                    <rect y="6" width="4" height="4" fill="#005E96"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H10V2H28" fill="#005E96"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 4V6H10V4H28Z" fill="#005E96"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 8H10V10H28V8Z" fill="#005E96"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 12V14H0V12H28Z" fill="#005E96"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16V18H0V16H28Z" fill="#005E96"/>
+                                </svg>     
+                            </div>
+                            <ul class="lang-flags">
+                                <li>
+                                    <a href="#">
+                                        <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="28" height="18" fill="white"/>
+                                            <rect width="4" height="4" fill="#005E96"/>
+                                            <rect x="6" width="4" height="4" fill="#005E96"/>
+                                            <rect x="6" y="6" width="4" height="4" fill="#005E96"/>
+                                            <rect y="6" width="4" height="4" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H10V2H28" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 4V6H10V4H28Z" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 8H10V10H28V8Z" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 12V14H0V12H28Z" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16V18H0V16H28Z" fill="#005E96"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="28" height="18" fill="white"/>
+                                            <rect width="4" height="4" fill="#005E96"/>
+                                            <rect x="6" width="4" height="4" fill="#005E96"/>
+                                            <rect x="6" y="6" width="4" height="4" fill="#005E96"/>
+                                            <rect y="6" width="4" height="4" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H10V2H28" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 4V6H10V4H28Z" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 8H10V10H28V8Z" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 12V14H0V12H28Z" fill="#005E96"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16V18H0V16H28Z" fill="#005E96"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9083 5.65833L7.40829 9.15833C7.29163 9.275 7.17496 9.33333 6.99996 9.33333C6.82496 9.33333 6.70829 9.275 6.59163 9.15833L3.09163 5.65833C2.85829 5.425 2.85829 5.075 3.09163 4.84166C3.32496 4.60833 3.67496 4.60833 3.90829 4.84166L6.99996 7.93333L10.0916 4.84166C10.325 4.60833 10.675 4.60833 10.9083 4.84166C11.1416 5.075 11.1416 5.425 10.9083 5.65833Z" fill="black"/>
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="4" width="10" height="6">
+                                <path d="M10.9083 5.65833L7.40829 9.15833C7.29163 9.275 7.17496 9.33333 6.99996 9.33333C6.82496 9.33333 6.70829 9.275 6.59163 9.15833L3.09163 5.65833C2.85829 5.425 2.85829 5.075 3.09163 4.84166C3.32496 4.60833 3.67496 4.60833 3.90829 4.84166L6.99996 7.93333L10.0916 4.84166C10.325 4.60833 10.675 4.60833 10.9083 4.84166C11.1416 5.075 11.1416 5.425 10.9083 5.65833Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                <rect width="14" height="14" fill="white"/>
+                                </g>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+                <nav id="main" class="rounded-md relative w-full flex align-start pt-10 justify-center lg:bg-white lg:justify-start lg:items-center lg:pt-0 lg:h-60">
+                    <a href="#" class="menu-opener hamburger-menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7H21C21.6 7 22 6.6 22 6C22 5.4 21.6 5 21 5H3C2.4 5 2 5.4 2 6C2 6.6 2.4 7 3 7ZM22 12C22 12.6 21.6 13 21 13H3C2.4 13 2 12.6 2 12C2 11.4 2.4 11 3 11H21C21.6 11 22 11.4 22 12ZM3 17H21C21.6 17 22 17.4 22 18C22 18.6 21.6 19 21 19H3C2.4 19 2 18.6 2 18C2 17.4 2.4 17 3 17Z" fill="black"/>
+                            <mask id="hamburger" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="5" width="20" height="14">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7H21C21.6 7 22 6.6 22 6C22 5.4 21.6 5 21 5H3C2.4 5 2 5.4 2 6C2 6.6 2.4 7 3 7ZM22 12C22 12.6 21.6 13 21 13H3C2.4 13 2 12.6 2 12C2 11.4 2.4 11 3 11H21C21.6 11 22 11.4 22 12ZM3 17H21C21.6 17 22 17.4 22 18C22 18.6 21.6 19 21 19H3C2.4 19 2 18.6 2 18C2 17.4 2.4 17 3 17Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#hamburger)">
+                            <rect width="24" height="24" fill="white"/>
+                            </g>
+                        </svg>                            
+                    </a>
+                    <div class="lg:hidden mobile-widgets flex justify-between text-white absolute left-0 w-full pl-22 pr-17 top-55p -translate-y-1/2 transform">
+                        <div class="flex flex-col place-items-center mr-20">
+                            <h4 class="sm:text-sm sm:tracking-lg block text-xs font-bold uppercase ml-25 tracking-md">Αρκαδια</h4>
+                            <div class="data-info flex items-center">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.833336C4.91668 0.833336 0.833344 4.91667 0.833344 10C0.833344 15.0833 4.91668 19.1667 10 19.1667C15.0833 19.1667 19.1667 15.0833 19.1667 10C19.1667 4.91667 15.0833 0.833336 10 0.833336ZM10 17.5C5.83334 17.5 2.50001 14.1667 2.50001 10C2.50001 5.83334 5.83334 2.5 10 2.5C14.1667 2.5 17.5 5.83334 17.5 10C17.5 14.1667 14.1667 17.5 10 17.5ZM13.0833 13.0833C13.4167 12.75 13.4167 12.25 13.0833 11.9167L10.8333 9.66667V5C10.8333 4.5 10.5 4.16667 10 4.16667C9.50001 4.16667 9.16668 4.5 9.16668 5V10C9.16668 10.25 9.25001 10.4167 9.41668 10.5833L11.9167 13.0833C12.0833 13.25 12.25 13.3333 12.5 13.3333C12.75 13.3333 12.9167 13.25 13.0833 13.0833Z" fill="black"/>
+                                    <mask id="clock2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.833336C4.91668 0.833336 0.833344 4.91667 0.833344 10C0.833344 15.0833 4.91668 19.1667 10 19.1667C15.0833 19.1667 19.1667 15.0833 19.1667 10C19.1667 4.91667 15.0833 0.833336 10 0.833336ZM10 17.5C5.83334 17.5 2.50001 14.1667 2.50001 10C2.50001 5.83334 5.83334 2.5 10 2.5C14.1667 2.5 17.5 5.83334 17.5 10C17.5 14.1667 14.1667 17.5 10 17.5ZM13.0833 13.0833C13.4167 12.75 13.4167 12.25 13.0833 11.9167L10.8333 9.66667V5C10.8333 4.5 10.5 4.16667 10 4.16667C9.50001 4.16667 9.16668 4.5 9.16668 5V10C9.16668 10.25 9.25001 10.4167 9.41668 10.5833L11.9167 13.0833C12.0833 13.25 12.25 13.3333 12.5 13.3333C12.75 13.3333 12.9167 13.25 13.0833 13.0833Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#clock2)">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </g>
+                                </svg>
+                                <p class="sm:text-3xl text-lg ml-5 font-sans">13:28</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col place-items-center">
+                            <h4 class="sm:text-sm sm:tracking-lg block text-xs font-bold uppercase ml-25 tracking-md">Καταιγιδα</h4>
+                            <div class="data-info flex items-center">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8485 14.8939H16.0145C18.6702 14.308 20.413 11.6294 19.9151 9.03448C19.4171 6.6907 17.3423 5.01658 15.0186 5.01658H14.5206C13.2757 1.41721 9.3751 -0.759157 5.64046 0.245319C3.73165 0.747556 2.07181 1.91944 1.0759 3.67728C-0.00299145 5.3514 -0.251967 7.44406 0.245985 9.3693C0.826929 11.3783 2.07181 13.0524 3.89763 14.0569C4.31259 14.308 4.81054 14.1406 5.05952 13.722C5.3085 13.3035 5.14251 12.8013 4.72755 12.6338C3.31669 11.7968 2.32078 10.5412 1.90582 8.95077C1.49086 7.36035 1.73984 5.85364 2.56976 4.43063C3.31669 3.09133 4.56157 2.17056 6.05542 1.75203C9.12613 0.914969 12.2798 2.84021 13.1097 5.93735C13.1927 6.35588 13.5247 6.607 13.9397 6.607H15.0186C16.5954 6.607 17.9233 7.69518 18.2552 9.2856C18.6702 11.0434 17.5083 12.885 15.6825 13.2198C15.1845 13.3035 14.9356 13.8057 15.0186 14.2243C15.1016 14.6428 15.4335 14.8939 15.8485 14.8939ZM9.12613 13.3035H12.5288C12.8608 13.3035 13.0268 13.5546 13.1927 13.8057C13.3587 14.0569 13.3587 14.3917 13.1927 14.6428L9.87306 19.6652C9.70708 19.8326 9.4581 20 9.20912 20C9.04314 20 8.87715 19.9163 8.71117 19.8326C8.29621 19.5815 8.21322 19.0792 8.46219 18.6607L10.952 14.9776H7.54928C7.21731 14.9776 6.96834 14.8102 6.88535 14.5591C6.71936 14.308 6.71936 13.9731 6.88535 13.722L10.205 8.69965C10.454 8.28112 10.952 8.19741 11.3669 8.44853C11.7819 8.69965 11.8649 9.20189 11.6159 9.62042L9.12613 13.3035Z" fill="black"/>
+                                    <mask id="cloud2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8485 14.8939H16.0145C18.6702 14.308 20.413 11.6294 19.9151 9.03448C19.4171 6.6907 17.3423 5.01658 15.0186 5.01658H14.5206C13.2757 1.41721 9.3751 -0.759157 5.64046 0.245319C3.73165 0.747556 2.07181 1.91944 1.0759 3.67728C-0.00299145 5.3514 -0.251967 7.44406 0.245985 9.3693C0.826929 11.3783 2.07181 13.0524 3.89763 14.0569C4.31259 14.308 4.81054 14.1406 5.05952 13.722C5.3085 13.3035 5.14251 12.8013 4.72755 12.6338C3.31669 11.7968 2.32078 10.5412 1.90582 8.95077C1.49086 7.36035 1.73984 5.85364 2.56976 4.43063C3.31669 3.09133 4.56157 2.17056 6.05542 1.75203C9.12613 0.914969 12.2798 2.84021 13.1097 5.93735C13.1927 6.35588 13.5247 6.607 13.9397 6.607H15.0186C16.5954 6.607 17.9233 7.69518 18.2552 9.2856C18.6702 11.0434 17.5083 12.885 15.6825 13.2198C15.1845 13.3035 14.9356 13.8057 15.0186 14.2243C15.1016 14.6428 15.4335 14.8939 15.8485 14.8939ZM9.12613 13.3035H12.5288C12.8608 13.3035 13.0268 13.5546 13.1927 13.8057C13.3587 14.0569 13.3587 14.3917 13.1927 14.6428L9.87306 19.6652C9.70708 19.8326 9.4581 20 9.20912 20C9.04314 20 8.87715 19.9163 8.71117 19.8326C8.29621 19.5815 8.21322 19.0792 8.46219 18.6607L10.952 14.9776H7.54928C7.21731 14.9776 6.96834 14.8102 6.88535 14.5591C6.71936 14.308 6.71936 13.9731 6.88535 13.722L10.205 8.69965C10.454 8.28112 10.952 8.19741 11.3669 8.44853C11.7819 8.69965 11.8649 9.20189 11.6159 9.62042L9.12613 13.3035Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#cloud2)">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </g>
+                                </svg>
+                                <p class="sm:text-3xl text-lg ml-5 font-sans">12°C<span class="opacity-40 ml-3">°F</span></p>                      
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="./img/logo.png" alt="Panarcadians Logo">
+                    </a>
+        
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#">Η Ομοσπονδια</a>
+                            <ul class="submenu">
+                                <li><a href="#">Ιστορία</a></li>
+                                <li><a href="#">Διοικητικό Συμβούλιο</a></li>
+                                <li><a href="#">Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+                                <li><a href="#">Μήνυμα Προέδρου</a></li>
+                                <li><a href="#">Districts</a></li>
+                                <li><a href="#">Διατελεσαντες Προέδροι</a></li>
+                                <li><a href="#">Αποστολή - Αξίες</a></li>
+                                <li><a href="#">Πορεία - Εξέλιξη</a></li>
+                                <li><a href="#">Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+                                <li><a href="#">Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+                                <li><a href="#">Ο Οικουμενικός Πατριάρχης</a></li>
+                                <li><a href="#">Ο Αρχιεπίσκοπος Αμερικής</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Αρκαδων Εργα</a></li>
+                        <li><a href="#">Επωνυμοι Αρκαδες</a></li>
+                        <li><a href="#">Νεα - Ενημερωση</a></li>
+                        <li><a href="#">Επισκεψη στην Αρκαδια</a></li>
+                        <li><a href="#">Αναζητησεις στην Αρκαδια</a></li>
+                        <li class="menu-message-link ml-auto mr-40 justify-end sm:hidden xl:flex"><a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.3 3 1 4.3 1 6V18C1 19.7 2.3 21 4 21H20C21.7 21 23 19.7 23 18V6C23 4.3 21.7 3 20 3ZM4 5H20C20.4 5 20.7 5.2 20.9 5.6L12 11.8L3.1 5.6C3.3 5.2 3.6 5 4 5ZM3 18C3 18.6 3.4 19 4 19H20C20.6 19 21 18.6 21 18V7.9L12.6 13.8C12.4 13.9 12.2 14 12 14C11.8 14 11.6 13.9 11.4 13.8L3 7.9V18Z" fill="black"/>
+                                <mask id="message" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="3" width="22" height="18">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.3 3 1 4.3 1 6V18C1 19.7 2.3 21 4 21H20C21.7 21 23 19.7 23 18V6C23 4.3 21.7 3 20 3ZM4 5H20C20.4 5 20.7 5.2 20.9 5.6L12 11.8L3.1 5.6C3.3 5.2 3.6 5 4 5ZM3 18C3 18.6 3.4 19 4 19H20C20.6 19 21 18.6 21 18V7.9L12.6 13.8C12.4 13.9 12.2 14 12 14C11.8 14 11.6 13.9 11.4 13.8L3 7.9V18Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#message)">
+                                <path fill-rule="evenodd" class="menu-svg" clip-rule="evenodd" d="M0 0H24V24H0V0Z" fill="#002868"/>
+                                </g>
+                            </svg>                            
+                        </a></li>
+                    </ul>
+                </nav>    
+
+                <div class="relative">
+                    <div class="bottom-bar-graphic 2xl:left-245 xl:left-220 lg:left-160 lg:transform-none absolute left-1/2 transform -translate-x-1/2 top-10 sm:top-20">
+                        <img src="./img/icons/federation.svg" alt="Panarcadian Federation of America - Founded in New York 1931">                 
+                    </div>
+                </div>
+                
+                <div id="featured" class="sm:w-450 sm:h-450 sm:p-40 h-280 w-280 shadow-lg-40 py-18 px-40 sm:h-140 border-2 sm:border-6 border-white rounded-full text-center text-white mx-auto mt-64 md:mt-70">
+                    <svg class="w-18 sm:w-24" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                        <mask id="greek_symbol0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#greek_symbol0)">
+                        <rect width="24" height="24" fill="white"/>
+                        </g>
+                    </svg>                                                         
+                    <h3 class="mt-4 mb-16 sm:mt-10 sm:mb-30 uppercase text-sm tracking-lg">Καλως Ηλθατε</h3>
+                    <h2 class="text-lg sm:text-2xl mb-16 sm:mb-32">Η αποστολή μας</h2>
+                    <p class="font-normal my-16 leading-16 sm:leading-25 text-tiny sm:text-base sm:my-30 overflow-hidden">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη κερδοσκοπικού αδελφό ελληνικό-αμερικανική οργάνωση τα μέλη της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο, στη νότια Ελλάδα …</p>
+                    <a href="#" class="text-white h-40 w-140 sm:w-200 sm:h-50 border-white border-1 rounded-md text-tiny no-underline inline-flex items-center justify-center uppercase font-bold">Περισσοτερα</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="absolute right-0 top-0 bg-white flex flex-col min-w-300 h-screen min-h-full overflow-hidden">
+                <div class="flex justify-between bg-lightgray p-10">
+                    <a href="#" class="menu-closer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7 17.3C19.1 17.7 19.1 18.3 18.7 18.7C18.5 18.9 18.3 19 18 19C17.7 19 17.5 18.9 17.3 18.7L12 13.4L6.7 18.7C6.5 18.9 6.3 19 6 19C5.7 19 5.5 18.9 5.3 18.7C4.9 18.3 4.9 17.7 5.3 17.3L10.6 12L5.3 6.7C4.9 6.3 4.9 5.7 5.3 5.3C5.7 4.9 6.3 4.9 6.7 5.3L12 10.6L17.3 5.3C17.7 4.9 18.3 4.9 18.7 5.3C19.1 5.7 19.1 6.3 18.7 6.7L13.4 12L18.7 17.3Z" fill="black"/>
+                            <mask id="cross" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="14" height="14">
+                            <path d="M18.7 17.3C19.1 17.7 19.1 18.3 18.7 18.7C18.5 18.9 18.3 19 18 19C17.7 19 17.5 18.9 17.3 18.7L12 13.4L6.7 18.7C6.5 18.9 6.3 19 6 19C5.7 19 5.5 18.9 5.3 18.7C4.9 18.3 4.9 17.7 5.3 17.3L10.6 12L5.3 6.7C4.9 6.3 4.9 5.7 5.3 5.3C5.7 4.9 6.3 4.9 6.7 5.3L12 10.6L17.3 5.3C17.7 4.9 18.3 4.9 18.7 5.3C19.1 5.7 19.1 6.3 18.7 6.7L13.4 12L18.7 17.3Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#cross)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V24H0V0Z" fill="#002868"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="lang-picker inline-flex items-center cursor-pointer relative">
+                        <div class=" mr-4 inline-flex">
+                            <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="28" height="18" fill="white"/>
+                                <rect width="4" height="4" fill="#005E96"/>
+                                <rect x="6" width="4" height="4" fill="#005E96"/>
+                                <rect x="6" y="6" width="4" height="4" fill="#005E96"/>
+                                <rect y="6" width="4" height="4" fill="#005E96"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H10V2H28" fill="#005E96"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 4V6H10V4H28Z" fill="#005E96"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 8H10V10H28V8Z" fill="#005E96"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 12V14H0V12H28Z" fill="#005E96"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16V18H0V16H28Z" fill="#005E96"/>
+                            </svg>     
+                        </div>
+                        <ul class="lang-flags">
+                            <li>
+                                <a href="#">
+                                    <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="28" height="18" fill="white"/>
+                                        <rect width="4" height="4" fill="#005E96"/>
+                                        <rect x="6" width="4" height="4" fill="#005E96"/>
+                                        <rect x="6" y="6" width="4" height="4" fill="#005E96"/>
+                                        <rect y="6" width="4" height="4" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H10V2H28" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 4V6H10V4H28Z" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 8H10V10H28V8Z" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 12V14H0V12H28Z" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16V18H0V16H28Z" fill="#005E96"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="28" height="18" fill="white"/>
+                                        <rect width="4" height="4" fill="#005E96"/>
+                                        <rect x="6" width="4" height="4" fill="#005E96"/>
+                                        <rect x="6" y="6" width="4" height="4" fill="#005E96"/>
+                                        <rect y="6" width="4" height="4" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H10V2H28" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 4V6H10V4H28Z" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 8H10V10H28V8Z" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 12V14H0V12H28Z" fill="#005E96"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28 16V18H0V16H28Z" fill="#005E96"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9083 5.65833L7.40829 9.15833C7.29163 9.275 7.17496 9.33333 6.99996 9.33333C6.82496 9.33333 6.70829 9.275 6.59163 9.15833L3.09163 5.65833C2.85829 5.425 2.85829 5.075 3.09163 4.84166C3.32496 4.60833 3.67496 4.60833 3.90829 4.84166L6.99996 7.93333L10.0916 4.84166C10.325 4.60833 10.675 4.60833 10.9083 4.84166C11.1416 5.075 11.1416 5.425 10.9083 5.65833Z" fill="black"/>
+                            <mask id="chevron_bottom" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="4" width="10" height="6">
+                            <path d="M10.9083 5.65833L7.40829 9.15833C7.29163 9.275 7.17496 9.33333 6.99996 9.33333C6.82496 9.33333 6.70829 9.275 6.59163 9.15833L3.09163 5.65833C2.85829 5.425 2.85829 5.075 3.09163 4.84166C3.32496 4.60833 3.67496 4.60833 3.90829 4.84166L6.99996 7.93333L10.0916 4.84166C10.325 4.60833 10.675 4.60833 10.9083 4.84166C11.1416 5.075 11.1416 5.425 10.9083 5.65833Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#chevron_bottom)">
+                            <rect width="14" height="14" fill="black"/>
+                            </g>
+                        </svg>                                
+                    </div>
+                </div>
+
+                <div class="justify-center pt-13 px-10 pb-12 border-b-1 border-lightgray-200 m-0 flex items-center mr-40">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 7C7 4.2 9.2 2 12 2C14.8 2 17 4.2 17 7C17 9.8 14.8 12 12 12C9.2 12 7 9.8 7 7ZM21 19V21C21 21.6 20.6 22 20 22C19.4 22 19 21.6 19 21V19C19 17.3 17.7 16 16 16H8C6.3 16 5 17.3 5 19V21C5 21.6 4.6 22 4 22C3.4 22 3 21.6 3 21V19C3 16.2 5.2 14 8 14H16C18.8 14 21 16.2 21 19ZM12 10C10.3 10 9 8.7 9 7C9 5.3 10.3 4 12 4C13.7 4 15 5.3 15 7C15 8.7 13.7 10 12 10Z" fill="black"/>
+                        <mask id="avatar2" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="2" width="18" height="20">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 7C7 4.2 9.2 2 12 2C14.8 2 17 4.2 17 7C17 9.8 14.8 12 12 12C9.2 12 7 9.8 7 7ZM21 19V21C21 21.6 20.6 22 20 22C19.4 22 19 21.6 19 21V19C19 17.3 17.7 16 16 16H8C6.3 16 5 17.3 5 19V21C5 21.6 4.6 22 4 22C3.4 22 3 21.6 3 21V19C3 16.2 5.2 14 8 14H16C18.8 14 21 16.2 21 19ZM12 10C10.3 10 9 8.7 9 7C9 5.3 10.3 4 12 4C13.7 4 15 5.3 15 7C15 8.7 13.7 10 12 10Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#avatar2)">
+                        <rect width="24" height="24" fill="#002868"/>
+                        </g>
+                    </svg>
+                    <a href="#" class="text-blue text-tiny font-bold no-underline ml-5">Εγγραφή / Σύνδεση</a>
+                </div>
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#">Η Ομοσπονδια</a>
+                        <ul class="submenu">
+                            <li><a href="#">Ιστορία</a></li>
+                            <li><a href="#">Διοικητικό Συμβούλιο</a></li>
+                            <li><a href="#">Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+                            <li><a href="#">Μήνυμα Προέδρου</a></li>
+                            <li><a href="#">Districts</a></li>
+                            <li><a href="#">Διατελεσαντες Προέδροι</a></li>
+                            <li><a href="#">Αποστολή - Αξίες</a></li>
+                            <li><a href="#">Πορεία - Εξέλιξη</a></li>
+                            <li><a href="#">Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+                            <li><a href="#">Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+                            <li><a href="#">Ο Οικουμενικός Πατριάρχης</a></li>
+                            <li><a href="#">Ο Αρχιεπίσκοπος Αμερικής</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Αρκαδων Εργα</a>
+                        <ul class="submenu">
+                            <li><a href="#">Ιστορία</a></li>
+                            <li><a href="#">Διοικητικό Συμβούλιο</a></li>
+                            <li><a href="#">Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Επωνυμοι Αρκαδες</a>
+                        <ul class="submenu">
+                            <li><a href="#">Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+                            <li><a href="#">Μήνυμα Προέδρου</a></li>
+                            <li><a href="#">Districts</a></li>
+                            <li><a href="#">Διατελεσαντες Προέδροι</a></li>
+                            <li><a href="#">Αποστολή - Αξίες</a></li>
+                            <li><a href="#">Πορεία - Εξέλιξη</a></li>
+                            <li><a href="#">Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Νεα - Ενημερωση</a>
+                        <ul class="submenu">
+                            <li><a href="#">Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+                            <li><a href="#">Ο Οικουμενικός Πατριάρχης</a></li>
+                            <li><a href="#">Ο Αρχιεπίσκοπος Αμερικής</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Επισκεψη στην Αρκαδια</a>
+                        <ul class="submenu">
+                            <li><a href="#">Διατελεσαντες Προέδροι</a></li>
+                            <li><a href="#">Αποστολή - Αξίες</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Αναζητησεις στην Αρκαδια</a>
+                        <ul class="submenu">
+                            <li><a href="#">Μήνυμα Προέδρου</a></li>
+                            <li><a href="#">Districts</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Επικοινωνια</a>
+                        <ul class="submenu">
+                            <li><a href="#">Μήνυμα Προέδρου</a></li>
+                            <li><a href="#">Districts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+
+        <!-- Announcement Section - Start -->
+
+        <section id="announcement" class="min-h-480 bg-lightgray pt-30 pb-38 sm:pt-40 sm:pb-38 sm:min-h-750">
+            <div class="px-20 w-full mx-auto sm:px-30 xl:w-1000 xl:p-0">
+                <div class="text-center">
+                    <img src="./img/tree.png" alt="Community logo" class="sm:w-250 w-218">
+                </div>
+                <h1 class="text-4xl text-red text-center mt-30 mb-10 leading-45 sm:text-5xl sm:my-40 sm:leading-50">Μετριόμαστε, γιατί μετράμε!</h1>
+                <div class="row-items">
+                    <div class="col6">
+                        <h3 class="text-blue text-lg leading-20 mb-20 mt-0 ">Γενική απογραφή  των αποδήμων Αρκάδων στις ΗΠΑ και επαναπατρισθέντων από τις ΗΠΑ</h3>
+                        <p class="text-darkgray text-base leading-25 mb-10">
+                            Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων που διαμένουν και εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας). 
+                        </p>
+                        <h4 class="text-darkgray text-base leading-25 my-10 sm:mb-15 sm:mt-0">Το αποτύπωμα της Αρκαδικής γης μας συνδέει!</h4>
+                        <p class="text-darkgray text-base leading-25 mb-10">
+                            Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να έχουμε...ψηλώσει πέρα απο τις ρίζες μας, η Αρκαδία, μας ενώνει!
+                        </p>
+                    </div>
+                    <div class="col6">
+                        <h3 class="text-blue text-lg leading-20 mb-20 mt-0">Απογραφόμαστε...</h3>
+                        <ul class="pl-20 mt-40">
+                            <li>Για να γνωρίσουμε ο ένας τον άλλο.</li>
+                            <li>Για να αντλήσουμε δύναμη απο  τις ρίζες μας και την καταγωγή μας.</li>
+                            <li>Για να είμαστε χρήσιμοι και να  παρεμβαίνουμε δημιουργικά για τις ΗΠΑ την Ελλάδα και την Αρκαδία.</li>
+                            <li>Για να υλοποιήσουμε τα σχέδια και τα οραματά μας.</li>
+                            <li>Για να είμαστε ισχυροί.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-20 sm:mt-30">
+                    <h3 class="text-red leading-20 text-lg uppercase mb-5 mt-0">Τελετη Εναρξης</h3>
+                    <h1 class="text-blue text-2xl mt-0 mb-4 sm:text-4xl">Παρασκευή 20 Απριλίου 2108</h1>
+                    <h2 class="text-blue text-lg leading-20 uppercase m-0">Νεα Υορκη</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcement Section - Stop -->
+
+    
+
+        <!-- Blog Section - Start -->
+
+        <section id="blog" class="min-h-650 bg-blue pt-30 py-20 pb-48 px-20 sm:py-40 sm:px-20">
+            <div class="container">
+                <div class="text-center text-white mb-30">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                        <mask id="greek_symbol1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#greek_symbol1)">
+                        <rect width="24" height="24" fill="white"/>
+                        </g>
+                    </svg>
+                    <h3 class="mt-6 mb-10 uppercase text-sm tracking-lg">Εργα & Δραστηριοτητες</h3>
+                </div>
+                <div class="row-items blog-row owl-carousel">
+                    <div class="col3">
+                        <div class="blog-card">
+                            <img src="./img/blog_photo_4.png" class="img-fluid" alt="Blog photo 1">
+                            <h2 class="text-lg mb-12 mt-20 sm:text-2xl sm:mb-4">Γενικό Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+                            <p class="text-base leading-25 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                            <a href="#" class="more-btn">Περισσοτερα</a>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <div class="blog-card">
+                            <img src="./img/blog_photo_1.png" class="img-fluid" alt="Blog photo 1">
+                            <h2 class="text-lg mb-12 mt-20 sm:text-2xl sm:mb-4">Ο  παραδοσιακός οικισμός του Λεωνιδίου</h2>
+                            <p class="text-base leading-25 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                            <a href="#" class="more-btn">Περισσοτερα</a>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <div class="blog-card">
+                            <img src="./img/blog_photo_2.png" class="img-fluid" alt="Blog photo 1">
+                            <h2 class="text-lg mb-12 mt-20 sm:text-2xl sm:mb-4">Κυνουρία, Εκεί που δεσπόζει ο Πάρνωνας</h2>
+                            <p class="text-base leading-25 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                            <a href="#" class="more-btn">Περισσοτερα</a>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <div class="blog-card">
+                            <img src="./img/blog_photo_3.png" class="img-fluid" alt="Blog photo 1">
+                            <h2 class="text-lg mb-12 mt-20 sm:text-2xl sm:mb-4">Οι ελληνικές πόλεις με τα καλύτερα πάρκα!</h2>
+                            <p class="text-base leading-25 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                            <a href="#" class="more-btn">Περισσοτερα</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-40">
+                    <a href="#" class="text-white h-50 w-full sm:w-200 border-white border-1 rounded-md text-tiny no-underline inline-flex items-center justify-center uppercase font-bold">Περισσοτερα</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section - Stop -->
+
+
+
+        <!-- Contact Section - Start -->
+
+        <section id="contact" class="pt-32 pb-60 sm:min-h-665 sm:pt-62 sm:pb-75">
+            <div class="text-center mb-20">
+                <h3 class="mt-0 mb-0 uppercase text-tiny text-blue sm:text-sm sm:tracking-lg">Επικοινωνια</h3>
+            </div>
+
+            <div class="form-container md:w-740 md:p-0 w-full px-15 mx-auto">
+                <form action="#">
+                    <div class="form-wrapper border-t-1 border-lightgray-200 pt-16 pb-27 px-5 sm:pt-16 sm:px-60 sm:pb-27">
+                        <div class="input-group mb-15">
+                            <label for="fullname" class="input-label">Ονοματεπώνυμο</label>
+                            <input type="text" id="fullname" class="input-text">
+                        </div>
+                        <div class="input-group mb-15">
+                            <label for="telephone" class="input-label">Τηλέφωνο</label>
+                            <div class="relative">
+                                <img src="./img/icons/phone.svg" class="absolute left-9 top-1/2 w-16 transform -translate-y-1/2">
+                                <input type="tel" id="telephone" class="input-text pl-34">
+                            </div>
+                        </div>
+                        <div class="input-group mb-15">
+                            <label for="email" class="input-label">Email</label>
+                            <div class="relative">
+                                <img src="./img/icons/email.svg" class="absolute left-9 top-1/2 w-16 transform -translate-y-1/2">
+                                <input type="email" id="email" class="input-text pl-34">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="your_message" class="input-label">Μήνυμα</label>
+                            <textarea name="your_message" id="your_message" cols="30" rows="8" class="textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="border-t-1 border-lightgray-200 pt-27 px-5 pb-0 sm:pt-21 sm:px-60 text-right">
+                        <button type="submit" class="submit-btn bg-red">Αποστολη 
+                            <span class="ease-ease align-middle absolute right-10 top-1/2 transform -translate-y-1/2 duration-300 inline-flex items-center"><img src="./img/icons/chevron_right.svg" alt="" class="w-24 h-24"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section - Stop -->
+
+
+
+        <footer class="min-h-420 bg-blue text-center relative">
+            <div class="container footer-container relative pt-30 px-15 pb-21 lg:pb-14">
+                
+                <div class="sm:w-180 w-140 mt-0 mx-auto mb-20 ">
+                    <img src="./img/logo.png" class="img-fluid shadow-lg-40 rounded-full" alt="Panarcadians logo">
+                </div>
+
+                <img src="./img/icons/federation.svg" alt="Panarcadian Federation of America - Founded in New York 1931">
+
+                <div class="footer-social my-30">
+                    <ul class="list-none p-0 flex justify-center m-0">
+                        <li>
+                            <a href="#" title="Facebook link">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7416 30V20.877H24.8038L25.2623 17.3216H21.7416V15.0518C21.7416 14.0224 22.0275 13.3209 23.5036 13.3209L25.3862 13.3201V10.1401C25.0606 10.0968 23.9431 10 22.6428 10C19.9284 10 18.07 11.6569 18.07 14.6997V17.3216H15V20.877H18.07V30H21.7416Z" fill="white"/>
+                                    <mask id="facebook" mask-type="alpha" maskUnits="userSpaceOnUse" x="15" y="10" width="11" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7416 30V20.877H24.8038L25.2623 17.3216H21.7416V15.0518C21.7416 14.0224 22.0275 13.3209 23.5036 13.3209L25.3862 13.3201V10.1401C25.0606 10.0968 23.9431 10 22.6428 10C19.9284 10 18.07 11.6569 18.07 14.6997V17.3216H15V20.877H18.07V30H21.7416Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#facebook)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V40H0V0Z" fill="#002868"/>
+                                    </g>
+                                </svg>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Twitter link">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 13.973C29.2651 14.3077 28.4739 14.534 27.644 14.6351C28.4915 14.1151 29.1419 13.2905 29.4483 12.3082C28.6547 12.7897 27.7778 13.14 26.841 13.3278C26.0944 12.5104 25.0273 12 23.8463 12C21.5819 12 19.7447 13.884 19.7447 16.2073C19.7447 16.5371 19.7799 16.8573 19.8503 17.1655C16.4401 16.9898 13.4173 15.3165 11.3923 12.768C11.0389 13.3916 10.837 14.1151 10.837 14.8855C10.837 16.3445 11.5613 17.6326 12.6624 18.3874C11.991 18.3669 11.357 18.1755 10.803 17.8625V17.9143C10.803 19.9535 12.2175 21.6545 14.0958 22.0397C13.7518 22.1384 13.3891 22.1878 13.0146 22.1878C12.7505 22.1878 12.4922 22.1625 12.2422 22.1132C12.7646 23.784 14.2789 25.0011 16.075 25.0336C14.671 26.1628 12.9007 26.8357 10.979 26.8357C10.648 26.8357 10.3205 26.8164 10 26.7779C11.816 27.9697 13.9737 28.6667 16.2898 28.6667C23.8381 28.6667 27.9644 22.2564 27.9644 16.696C27.9644 16.5131 27.9609 16.3301 27.9539 16.1507C28.7556 15.5572 29.4518 14.8169 30 13.973Z" fill="white"/>
+                                    <mask id="twitter" mask-type="alpha" maskUnits="userSpaceOnUse" x="10" y="12" width="20" height="17">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 13.973C29.2651 14.3077 28.4739 14.534 27.644 14.6351C28.4915 14.1151 29.1419 13.2905 29.4483 12.3082C28.6547 12.7897 27.7778 13.14 26.841 13.3278C26.0944 12.5104 25.0273 12 23.8463 12C21.5819 12 19.7447 13.884 19.7447 16.2073C19.7447 16.5371 19.7799 16.8573 19.8503 17.1655C16.4401 16.9898 13.4173 15.3165 11.3923 12.768C11.0389 13.3916 10.837 14.1151 10.837 14.8855C10.837 16.3445 11.5613 17.6326 12.6624 18.3874C11.991 18.3669 11.357 18.1755 10.803 17.8625V17.9143C10.803 19.9535 12.2175 21.6545 14.0958 22.0397C13.7518 22.1384 13.3891 22.1878 13.0146 22.1878C12.7505 22.1878 12.4922 22.1625 12.2422 22.1132C12.7646 23.784 14.2789 25.0011 16.075 25.0336C14.671 26.1628 12.9007 26.8357 10.979 26.8357C10.648 26.8357 10.3205 26.8164 10 26.7779C11.816 27.9697 13.9737 28.6667 16.2898 28.6667C23.8381 28.6667 27.9644 22.2564 27.9644 16.696C27.9644 16.5131 27.9609 16.3301 27.9539 16.1507C28.7556 15.5572 29.4518 14.8169 30 13.973Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#twitter)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V40H0V0Z" fill="#002868"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Linkedin link">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1625 10C11.9669 10 11 10.9714 11 12.1662C11 13.3624 11.9669 14.3333 13.1625 14.3333C14.3554 14.3333 15.3246 13.3624 15.3246 12.1662C15.3246 10.9714 14.3554 10 13.1625 10ZM11.2959 27.9998H15.0281V15.9768H11.2959V27.9998ZM20.9977 17.6197C21.4956 16.6745 22.7131 15.6775 24.5277 15.6775C28.3023 15.6775 29 18.167 29 21.4053V28H25.2739V22.1532C25.2739 20.7587 25.2464 18.9652 23.3345 18.9652C21.3936 18.9652 21.0974 20.4839 21.0974 22.0529V28H17.368V15.977H20.947V17.6197H20.9977Z" fill="#1A1919"/>
+                                    <mask id="linkedin" mask-type="alpha" maskUnits="userSpaceOnUse" x="11" y="10" width="18" height="18">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1625 10C11.9669 10 11 10.9714 11 12.1662C11 13.3624 11.9669 14.3333 13.1625 14.3333C14.3554 14.3333 15.3246 13.3624 15.3246 12.1662C15.3246 10.9714 14.3554 10 13.1625 10ZM11.2959 27.9998H15.0281V15.9768H11.2959V27.9998ZM20.9977 17.6197C21.4956 16.6745 22.7131 15.6775 24.5277 15.6775C28.3023 15.6775 29 18.167 29 21.4053V28H25.2739V22.1532C25.2739 20.7587 25.2464 18.9652 23.3345 18.9652C21.3936 18.9652 21.0974 20.4839 21.0974 22.0529V28H17.368V15.977H20.947V17.6197H20.9977Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#linkedin)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V40H0V0Z" fill="#002868"/>
+                                    </g>
+                                </svg>
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Instagram link">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26 10H14C11.7909 10 10 11.7909 10 14V26C10 28.2091 11.7909 30 14 30H26C28.2091 30 30 28.2091 30 26V14C30 11.7909 28.2091 10 26 10ZM11.6 14C11.6 12.6745 12.6745 11.6 14 11.6H26C27.3255 11.6 28.4 12.6745 28.4 14V26C28.4 27.3255 27.3255 28.4 26 28.4H14C12.6745 28.4 11.6 27.3255 11.6 26V14ZM20 26C16.6863 26 14 23.3137 14 20C14 16.6863 16.6863 14 20 14C23.3137 14 26 16.6863 26 20C26 23.3137 23.3137 26 20 26ZM20 24.4C22.4301 24.4 24.4 22.4301 24.4 20C24.4 17.5699 22.4301 15.6 20 15.6C17.5699 15.6 15.6 17.5699 15.6 20C15.6 22.4301 17.5699 24.4 20 24.4ZM26 15.2C26.6627 15.2 27.2 14.6627 27.2 14C27.2 13.3373 26.6627 12.8 26 12.8C25.3373 12.8 24.8 13.3373 24.8 14C24.8 14.6627 25.3373 15.2 26 15.2Z" fill="white"/>
+                                    <mask id="instagram" mask-type="alpha" maskUnits="userSpaceOnUse" x="10" y="10" width="20" height="20">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26 10H14C11.7909 10 10 11.7909 10 14V26C10 28.2091 11.7909 30 14 30H26C28.2091 30 30 28.2091 30 26V14C30 11.7909 28.2091 10 26 10ZM11.6 14C11.6 12.6745 12.6745 11.6 14 11.6H26C27.3255 11.6 28.4 12.6745 28.4 14V26C28.4 27.3255 27.3255 28.4 26 28.4H14C12.6745 28.4 11.6 27.3255 11.6 26V14ZM20 26C16.6863 26 14 23.3137 14 20C14 16.6863 16.6863 14 20 14C23.3137 14 26 16.6863 26 20C26 23.3137 23.3137 26 20 26ZM20 24.4C22.4301 24.4 24.4 22.4301 24.4 20C24.4 17.5699 22.4301 15.6 20 15.6C17.5699 15.6 15.6 17.5699 15.6 20C15.6 22.4301 17.5699 24.4 20 24.4ZM26 15.2C26.6627 15.2 27.2 14.6627 27.2 14C27.2 13.3373 26.6627 12.8 26 12.8C25.3373 12.8 24.8 13.3373 24.8 14C24.8 14.6627 25.3373 15.2 26 15.2Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#instagram)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V40H0V0Z" fill="#002868"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Youtube link">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.522 23.635L17.5212 16.8439L24.0057 20.2511L17.522 23.635ZM31.76 15.6671C31.76 15.6671 31.5252 14.0016 30.806 13.2682C29.8932 12.3051 28.8703 12.3006 28.4015 12.2447C25.043 12 20.0052 12 20.0052 12H19.9948C19.9948 12 14.957 12 11.5985 12.2447C11.129 12.3006 10.1068 12.3051 9.19325 13.2682C8.474 14.0016 8.24 15.6671 8.24 15.6671C8.24 15.6671 8 17.6234 8 19.5789V21.4128C8 23.3691 8.24 25.3246 8.24 25.3246C8.24 25.3246 8.474 26.9901 9.19325 27.7235C10.1068 28.6865 11.306 28.6563 11.84 28.7568C13.76 28.9426 20 29 20 29C20 29 25.043 28.9924 28.4015 28.7477C28.8703 28.6911 29.8932 28.6865 30.806 27.7235C31.5252 26.9901 31.76 25.3246 31.76 25.3246C31.76 25.3246 32 23.3691 32 21.4128V19.5789C32 17.6234 31.76 15.6671 31.76 15.6671Z" fill="white"/>
+                                    <mask id="youtube" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="12" width="24" height="17">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.522 23.635L17.5212 16.8439L24.0057 20.2511L17.522 23.635ZM31.76 15.6671C31.76 15.6671 31.5252 14.0016 30.806 13.2682C29.8932 12.3051 28.8703 12.3006 28.4015 12.2447C25.043 12 20.0052 12 20.0052 12H19.9948C19.9948 12 14.957 12 11.5985 12.2447C11.129 12.3006 10.1068 12.3051 9.19325 13.2682C8.474 14.0016 8.24 15.6671 8.24 15.6671C8.24 15.6671 8 17.6234 8 19.5789V21.4128C8 23.3691 8.24 25.3246 8.24 25.3246C8.24 25.3246 8.474 26.9901 9.19325 27.7235C10.1068 28.6865 11.306 28.6563 11.84 28.7568C13.76 28.9426 20 29 20 29C20 29 25.043 28.9924 28.4015 28.7477C28.8703 28.6911 29.8932 28.6865 30.806 27.7235C31.5252 26.9901 31.76 25.3246 31.76 25.3246C31.76 25.3246 32 23.3691 32 21.4128V19.5789C32 17.6234 31.76 15.6671 31.76 15.6671Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#youtube)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V40H0V0Z" fill="#002868"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu mb-18">
+                    <ul class="list-none p-0 flex justify-center m-0 flex-wrap flex-col sm:flex-row whitespace-nowrap">
+                        <li><a href="#" class="font-bold no-underline text-tiny uppercase p-9 lg:p-0 inline-block text-white hover:text-red">Η Ομοσπονδια</a></li>
+                        <li><a href="#" class="font-bold no-underline text-tiny uppercase p-9 lg:p-0 inline-block text-white hover:text-red">Αρκαδων Εργα</a></li>
+                        <li><a href="#" class="font-bold no-underline text-tiny uppercase p-9 lg:p-0 inline-block text-white hover:text-red">Επωνυμοι Αρκαδες</a></li>
+                        <li><a href="#" class="font-bold no-underline text-tiny uppercase p-9 lg:p-0 inline-block text-white hover:text-red">Νεα - Ενημερωση</a></li>
+                        <li><a href="#" class="font-bold no-underline text-tiny uppercase p-9 lg:p-0 inline-block text-white hover:text-red">Επισκεψη στην Αρκαδια</a></li>
+                        <li><a href="#" class="font-bold no-underline text-tiny uppercase p-9 lg:p-0 inline-block text-white hover:text-red">Αναζητησεις στην Αρκαδια</a></li>
+                        <li><a href="#" class="font-bold no-underline text-tiny uppercase p-9 lg:p-0 inline-block text-white hover:text-red" >Επικοινωνια</a></li>
+                    </ul>
+                </div>
+
+                <div class="text-center text-tiny text-white opacity-50">
+                    <p>©2018 Pan Arcadian Federation of America</p>
+                </div>
+
+                <a href="#" class="back-to-top">
+                    <img src="./img/icons/up.png">
+                </a>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/app.js"></script>
+    </body>
+
+</html>
