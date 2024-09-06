@@ -1,10 +1,6 @@
-
-
-
 const menuOpeners = document.querySelectorAll(".menu-opener");
 const menuClosers = document.querySelectorAll(".menu-closer");
 const mobileMenu = document.getElementById("mobile-menu");
-
 
 menuClosers.forEach( item => {
     item.addEventListener( "click" , closeMenu);
@@ -13,7 +9,6 @@ menuClosers.forEach( item => {
 menuOpeners.forEach( item => {
     item.addEventListener( "click" , openMenu);
 })
-
 
 //Adding class 'opened' on the end of transition, to be able to check if menu is open correctly
 mobileMenu.addEventListener("transitionend", () => {
@@ -24,8 +19,6 @@ mobileMenu.addEventListener("transitionend", () => {
     }
 })
 
-
-
 function closeMenu(){
     if(mobileMenu.classList.contains("open")){
         mobileMenu.classList.remove("open");
@@ -33,7 +26,6 @@ function closeMenu(){
         closeSubmenus();
     }
 }
-
 
 function openMenu(){
     if(!mobileMenu.classList.contains("open")){
@@ -49,8 +41,6 @@ function menuIsOpen(){
     return mobileMenu.classList.contains("opened") ? true : false;
 }
 
-
-
 /**
  * Listener to close menu in case its open and user clicks outside
  */
@@ -64,7 +54,6 @@ document.querySelector("body").addEventListener( "click", (e) => {
         }
     }
 })
-
 
 /**
  * Mobile menu functionality
@@ -99,9 +88,6 @@ submenuBtns.forEach( item => {
     })
 })
 
-
-
-
 /**
  * Closes all submenus in mobile menu
  */
@@ -112,7 +98,6 @@ function closeSubmenus(){
         }
     })
 }
-
 
 /**
  * Blog owlCarousel initialization
